@@ -2,7 +2,7 @@ const reData = [
   {
     "image": "assets/images/image2.jpg",
     'amount': 200000,
-    "address": "Jenisson, MIT 444321, NY",
+    "address": "MIT 444321, NY",
     "bedrooms": 4,
     "bathrooms": 2,
     "area": 1416,
@@ -13,7 +13,7 @@ const reData = [
   {
     "image": "assets/images/image1.jpg",
     'amount': 150000,
-    "address": "Jeniffer, MIT 553321, NY",
+    "address": "MIT 553321, NY",
     "bedrooms": 4,
     "bathrooms": 2,
     "area": 1416,

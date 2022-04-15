@@ -15,14 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     double screenWidth = window.physicalSize.width;
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Property App',
       theme: ThemeData(
-        primaryColor: colorWhite,
-        colorScheme:
-            ColorScheme.fromSwatch().copyWith(secondary: colorDarkBlue),
-        textTheme: screenWidth < 500 ? textThemeSmall : textThemeDefault,
-        fontFamily: "Montserrat"
-      ),
+          primaryColor: colorWhite,
+          colorScheme:
+              ColorScheme.fromSwatch().copyWith(secondary: colorDarkBlue),
+          textTheme: screenWidth < 500 ? textThemeSmall : textThemeDefault,
+          fontFamily: "Montserrat"),
       home: const LandingPage(),
     );
   }

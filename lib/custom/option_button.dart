@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:propertapp/utils/constants.dart';
 import 'package:propertapp/utils/widget_functions.dart';
@@ -18,12 +16,14 @@ class OptionButton extends StatelessWidget {
       width: width,
       child: TextButton(
           onPressed: () {},
-          style: TextButton.styleFrom(
-            primary: colorDarkBlue,
-            backgroundColor: colorWhite.withAlpha(55),
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+          style: ButtonStyle(
+            shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50))),
+            backgroundColor: MaterialStateProperty.all(colorDarkBlue),
+            padding: MaterialStateProperty.all<EdgeInsets>(
+                const EdgeInsets.symmetric(horizontal: 10, vertical: 10)),
+            overlayColor:
+                MaterialStateProperty.all(Colors.white.withOpacity(0.3)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
